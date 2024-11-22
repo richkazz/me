@@ -9,7 +9,6 @@ void main() async {
   final prefs = await SharedPreferences.getInstance();
   final hasCompletedOnboarding =
       prefs.getBool('hasCompletedOnboarding') ?? false;
-  Future.delayed(const Duration(seconds: 3));
   runApp(MyApp(hasCompletedOnboarding: hasCompletedOnboarding));
 }
 
