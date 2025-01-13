@@ -22,7 +22,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Me',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color.fromRGBO(176, 171, 159, 1)),
         fontFamily: 'Roboto',
         useMaterial3: true,
       ),
